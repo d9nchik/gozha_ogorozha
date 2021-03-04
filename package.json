@@ -4,7 +4,8 @@
   "description": "Site about fences",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/:css/"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/d9nchik/gozha_ogorozha/issues"
   },
-  "homepage": "https://github.com/d9nchik/gozha_ogorozha#readme"
+  "homepage": "https://github.com/d9nchik/gozha_ogorozha#readme",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
 }
