@@ -919,6 +919,21 @@ footer .architecture-footer {
   header nav li {
     font-size: 1.7vw;
   }
+
+  footer nav {
+    margin: 0 25px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  footer nav .main-footer-block {
+    grid-column: 1/6;
+    grid-row: 3/4;
+  }
+  footer nav .footer-block:last-child {
+    grid-column: 5/6;
+  }
+  footer nav .footer-block:nth-last-child(2) {
+    grid-column: 4/5;
+  }
 }
 @media screen and (max-width: 767px) {
   header {
