@@ -1651,6 +1651,7 @@ main #promo #carousel-body img {
   min-width: 200px;
   width: 100%;
   border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 main #promo #carousel-body h3 {
   margin: 0;
@@ -1689,6 +1690,48 @@ main #promo #carousel-controller img {
 }
 main #promo #carousel-controller img#active-carousel-contraoller {
   background-color: #D4A373;
+}
+main #menu {
+  display: grid;
+  grid-gap: 25px;
+  margin-top: 60px;
+  grid-template-columns: repeat(3, 1fr);
+}
+main #menu .menu-item {
+  position: relative;
+  width: 100%;
+  margin-right: 30px;
+}
+main #menu .menu-item .menu-item-title {
+  width: 100%;
+  background-color: rgba(250, 237, 205, 0.9);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: absolute;
+  bottom: 30px;
+}
+main #menu .menu-item .menu-item-title img {
+  display: block;
+  align-self: center;
+  justify-self: center;
+  border-radius: 0;
+  width: 80px;
+  box-shadow: none;
+}
+main #menu .menu-item img {
+  border-radius: 15px;
+  width: 100%;
+  max-height: 40vh;
+  object-position: center;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+main #menu .menu-item h3 {
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 34px;
+  font-weight: normal;
+  text-align: center;
 }
 
 footer {

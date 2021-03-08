@@ -79,6 +79,7 @@ main, footer
 
 main
   min-height: 500px
+
   #promo
     width: 100%
     position: relative
@@ -98,6 +99,7 @@ main
         min-width: 200px
         width: 100%
         border-radius: 15px
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 
       h3
         margin: 0
@@ -136,6 +138,50 @@ main
 
       img#active-carousel-contraoller
         background-color: $brown
+
+
+  #menu
+    display: grid
+    grid-gap: 25px
+    margin-top: 60px
+    grid-template-columns: repeat(3, 1fr)
+
+    .menu-item
+      position: relative
+      width: 100%
+      margin-right: 30px
+
+
+      .menu-item-title
+        width: 100%
+        background-color: transparentize($primary-1, 0.1)
+        display: grid
+        grid-template-columns: 1fr 2fr
+        position: absolute
+        bottom: 30px
+
+        img
+          display: block
+          align-self: center
+          justify-self: center
+          border-radius: 0
+          width: 80px
+          box-shadow: none
+
+      img
+        border-radius: 15px
+        width: 100%
+        max-height: 40vh
+        object-position: center
+        object-fit: cover
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+
+      h3
+        display: block
+        font-family: "Source Sans Pro", sans-serif
+        font-size: 34px
+        font-weight: normal
+        text-align: center
 
 
 footer
