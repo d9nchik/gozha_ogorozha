@@ -71,40 +71,61 @@ main
 
   #promo
     margin-top: 15px
-    position: relative
     display: flex
-    justify-content: center
+    flex-direction: column
+    align-items: center
     width: 100%
 
-    div
+    #carousel-body
       position: relative
       width: 80%
 
-    img
-      margin: 0 auto
-      object-position: bottom
-      object-fit: cover
-      max-height: 80vh
-      min-width: 200px
-      width: 100%
-      border-radius: 15px
+      img
+        margin: 0 auto
+        object-position: bottom
+        object-fit: cover
+        max-height: 80vh
+        min-width: 200px
+        width: 100%
+        border-radius: 15px
 
-    h3
-      margin: 0
-      position: absolute
-      top: 50px
-      right: 50px
-      font-size: 34px
-      color: white
-      display: block
+      h3
+        margin: 0
+        position: absolute
+        top: 50px
+        right: 50px
+        font-size: 34px
+        color: white
+        display: block
 
-    button
-      position: absolute
-      bottom: 30px
-      right: 50px
-      font-family: Roboto, sans-serif
-      font-size: 18px
-      height: 40px
+      button
+        position: absolute
+        bottom: 30px
+        right: 50px
+        font-family: Roboto, sans-serif
+        font-size: 18px
+        height: 40px
+
+    #carousel-controller
+      width: 30%
+      position: relative
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+      img:first-child, img:last-child
+        width: 30px
+        height: 30px
+        background-color: transparent
+
+      img
+        background-color: $primary-1
+        display: block
+        width: 15px
+        height: 15px
+      img#active-carousel-contraoller
+        background-color: $brown
+
 
 footer
   background-color: $brown
@@ -178,13 +199,15 @@ footer
 
   main
     #promo
-      div
+      #carousel-body
         width: 90%
-      img
-        max-height: 40vh
-      h3
-        top: 5px
-        right: 40px
+
+        img
+          max-height: 40vh
+
+        h3
+          top: 5px
+          right: 40px
 
 @media screen and (max-width: 767px)
   header
@@ -230,10 +253,12 @@ footer
 
   main
     #promo
-      div
+      #carousel-body
         width: 95%
-      img
-        max-height: 20vh
-      h3
-        font-size: 18px
-        top: 10px
+
+        img
+          max-height: 20vh
+
+        h3
+          font-size: 18px
+          top: 10px
