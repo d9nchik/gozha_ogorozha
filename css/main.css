@@ -1701,6 +1701,8 @@ main #menu .menu-item {
   position: relative;
   width: 100%;
   margin-right: 30px;
+  overflow: hidden;
+  border-radius: 15px;
 }
 main #menu .menu-item .menu-item-title {
   width: 100%;
@@ -1716,17 +1718,18 @@ main #menu .menu-item .menu-item-title img {
   justify-self: center;
   border-radius: 0;
   width: 80px;
-  box-shadow: none;
-  height: auto;
 }
-main #menu .menu-item img {
-  border-radius: 15px;
+main #menu .menu-item > img {
+  transition: 1s;
   width: 100%;
   max-height: 40vh;
   height: 100%;
   object-position: center;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+main #menu .menu-item > img:hover {
+  transform: scale(1.2);
 }
 main #menu .menu-item h3 {
   display: block;

@@ -150,6 +150,8 @@ main
       position: relative
       width: 100%
       margin-right: 30px
+      overflow: hidden
+      border-radius: 15px
 
 
       .menu-item-title
@@ -166,17 +168,18 @@ main
           justify-self: center
           border-radius: 0
           width: 80px
-          box-shadow: none
-          height: auto
 
-      img
-        border-radius: 15px
+      & > img
+        transition: 1s
         width: 100%
         max-height: 40vh
         height: 100%
         object-position: center
         object-fit: cover
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+
+      & > img:hover
+        transform: scale(1.2)
 
       h3
         display: block
@@ -267,6 +270,7 @@ footer
         h3
           top: 5px
           right: 40px
+
     #menu
       grid-template-columns: repeat(2, 1fr)
 
@@ -329,5 +333,6 @@ footer
         button
           bottom: 15px
           right: 25px
+
     #menu
       grid-template-columns: 1fr
