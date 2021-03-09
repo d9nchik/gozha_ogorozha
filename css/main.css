@@ -2379,6 +2379,22 @@ footer .architecture-footer {
     font-size: 14px;
     line-height: 24.5px;
   }
+  main #item-table {
+    grid-template-columns: 1fr;
+  }
+  main #item-table #item-table-info article {
+    font-size: 15px;
+    line-height: 32.5px;
+  }
+  main #item-table #item-table-info button {
+    font-size: 24px;
+  }
+  main #item-table img {
+    grid-row: 1/2;
+  }
+  main p#contact-us {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
