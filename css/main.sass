@@ -6,6 +6,7 @@ $secondary-2: #E9EDC9
 $natural: #FEFAE0
 $brown: #D4A373
 $text-main: black
+$border-radius: 15px
 
 body
   font-family: "Source Sans Pro", sans-serif
@@ -63,7 +64,7 @@ header
         padding-left: 5px
         width: 170px
         height: 25px
-        border-radius: 15px
+        border-radius: $border-radius
 
 
 main, footer
@@ -98,7 +99,7 @@ main
         max-height: 80vh
         min-width: 200px
         width: 100%
-        border-radius: 15px
+        border-radius: $border-radius
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 
       h3
@@ -155,10 +156,10 @@ main
       position: relative
       width: 100%
       overflow: hidden
-      border-radius: 15px
+      border-radius: $border-radius
 
       h2
-        border-radius: 15px
+        border-radius: $border-radius
         position: absolute
         bottom: 0
         margin: 0
@@ -196,7 +197,7 @@ main
       width: 100%
       margin-right: 30px
       overflow: hidden
-      border-radius: 15px
+      border-radius: $border-radius
 
 
       .menu-item-title
@@ -244,6 +245,39 @@ main
       font-family: "Source Sans Pro", sans-serif
       font-size: 24px
       line-height: 34.5px
+
+  #item-table
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+
+    & > img
+      width: 100%
+      max-height: 70vh
+      object-position: center
+      object-fit: cover
+      border-radius: $border-radius
+
+    #item-table-info
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      article
+        font-size: 24px
+        line-height: 40px
+        text-align: center
+
+      button
+        font-family: "Source Sans Pro", sans-serif
+        font-size: 32px
+        margin-top: 25px
+        background-color: $secondary
+        border-radius: $border-radius
+
+  p#contact-us
+    font-family: "Roboto Condensed", sans-serif
+    font-size: 30px
+    text-align: center
 
 
 footer
