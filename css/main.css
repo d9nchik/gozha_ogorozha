@@ -2102,6 +2102,7 @@ main #category-menu .category-menu-item h2 {
   font-weight: normal;
   font-family: Roboto, sans-serif;
   font-size: 24px;
+  text-align: center;
 }
 main #category-menu .category-menu-item img {
   transition: 1s;
@@ -2304,6 +2305,16 @@ footer .architecture-footer {
     width: 95%;
   }
 
+  main #category-menu {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+  main #category-menu h1 {
+    font-size: 24px;
+  }
+  main #category-menu .category-menu-item p {
+    font-size: 18px;
+  }
   main #promo #carousel-body img {
     max-height: 20vh;
   }
