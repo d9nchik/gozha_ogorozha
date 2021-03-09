@@ -2274,6 +2274,13 @@ footer .architecture-footer {
   main #menu {
     grid-template-columns: 1fr;
   }
+  main article h1 {
+    font-size: 24px;
+  }
+  main article p {
+    font-size: 14px;
+    line-height: 24.5px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
