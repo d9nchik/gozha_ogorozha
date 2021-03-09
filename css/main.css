@@ -2195,6 +2195,7 @@ main #item-table #item-table-info article {
   text-align: center;
 }
 main #item-table #item-table-info button {
+  padding: 5px 25px;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 32px;
   margin-top: 25px;
@@ -2205,6 +2206,7 @@ main p#contact-us {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 30px;
   text-align: center;
+  margin: 36px 0;
 }
 
 footer {
@@ -2288,6 +2290,13 @@ footer .architecture-footer {
   }
   main #menu {
     grid-template-columns: repeat(2, 1fr);
+  }
+  main #item-table #item-table-info article {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  main #item-table #item-table-info button {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 767px) {
