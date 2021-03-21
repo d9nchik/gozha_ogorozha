@@ -1942,6 +1942,11 @@ ul {
   list-style-type: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 button {
   background-color: #D4A373;
   cursor: pointer;
